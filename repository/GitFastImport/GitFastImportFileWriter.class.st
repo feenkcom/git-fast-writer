@@ -67,7 +67,7 @@ committer {committerName} <{committerEmail}> {committedDate} +0000
 					#authoredDate -> aCommitInfo authoredDate withoutOffset asUnixTime.
 					#committerName -> aCommitInfo committerName.
 					#committerEmail -> aCommitInfo committerEmail.
-					#committedDate -> aCommitInfo committedDate withoutOffset asUnixTime.
+					#committedDate -> aCommitInfo authoredDate withoutOffset asUnixTime.
 					#commitMessageSize -> ('data ' , aCommitInfo commitMessage utf8Encoded size asString).
 					#commitMessage -> aCommitInfo commitMessage} asDictionary)
 ]
